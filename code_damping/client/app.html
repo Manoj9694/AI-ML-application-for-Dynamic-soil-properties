@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>seismic maping</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<div class="container">
+	<h2>Strain(%)</h2>
+    <input class="area"  type="text" id="strain" class="floatLabel"  >
+
+	<h2>Relative Density(%)</h2>
+    <input class="area"  type="text" id="density" class="floatLabel"  >
+
+	<h2>Confining Pressure(KPa)</h2>
+    <input class="area"  type="text" id="pressure" class="floatLabel" >
+
+	<h2>Soil</h2>
+		<select class="location" name="" id="locations">
+			<option value="" selected="selected">Choose a Location</option>
+		</select>
+	<button class="submit" onclick=onClickedpredict() type="button">Estimate Damping ratio</button>
+
+
+	<div id="result" class="result"> </div>
+</div>
+
+<div style="width: 790px;padding-left: 15px;margin-left: 330px;margin-top: 60px;color:white;font-size: 20px;background-color: red;border-radius: 5px;">
+	Where Marine, Pachoria, Bangalore_C, and Bangalore_D are clays, and everything else is sands.
+
+</div>
+</body>
+</html>
